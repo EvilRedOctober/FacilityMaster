@@ -1,0 +1,2198 @@
+object MainForm: TMainForm
+  Left = 375
+  Height = 750
+  Top = 105
+  Width = 900
+  Caption = 'Мастер Объекта'
+  ClientHeight = 730
+  ClientWidth = 900
+  Color = 15791615
+  Font.CharSet = RUSSIAN_CHARSET
+  Font.Color = clBlack
+  Font.Height = -16
+  Font.Name = 'Franklin Gothic Medium'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '2.0.6.0'
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 730
+    Top = 0
+    Width = 900
+    ActivePage = TabSheet2
+    Align = alClient
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Franklin Gothic Medium'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabIndex = 1
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Регистрация данных'
+      ClientHeight = 696
+      ClientWidth = 892
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Franklin Gothic Medium'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      object Memo1: TMemo
+        Left = 0
+        Height = 120
+        Top = 576
+        Width = 892
+        Align = alBottom
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Times New Roman'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+        ReadOnly = True
+        ScrollBars = ssAutoVertical
+        TabOrder = 0
+      end
+      object GroupBox1: TGroupBox
+        Left = 0
+        Height = 120
+        Top = 0
+        Width = 889
+        Align = alCustom
+        Caption = 'Настройка съема данных'
+        ClientHeight = 94
+        ClientWidth = 885
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Franklin Gothic Medium'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+        TabOrder = 1
+        object FrameCount: TSpinEdit
+          Left = 120
+          Height = 29
+          Top = 8
+          Width = 72
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Franklin Gothic Medium'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          MaxValue = 9999
+          MinValue = 1
+          ParentFont = False
+          TabOrder = 0
+          Value = 100
+        end
+        object EditName: TEdit
+          AnchorSideRight.Side = asrBottom
+          Left = 721
+          Height = 29
+          Top = 8
+          Width = 160
+          Anchors = [akTop, akRight]
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Franklin Gothic Medium'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          MaxLength = 15
+          ParentFont = False
+          TabOrder = 1
+          Text = 'Иванов И. И.'
+        end
+        object Label1: TLabel
+          AnchorSideRight.Side = asrBottom
+          Left = 594
+          Height = 21
+          Top = 8
+          Width = 111
+          Anchors = [akTop, akRight]
+          Caption = 'ФИО оператора'
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Franklin Gothic Medium'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentColor = False
+          ParentFont = False
+        end
+        object EditComment: TEdit
+          Left = 256
+          Height = 29
+          Top = 56
+          Width = 465
+          Anchors = [akTop, akLeft, akRight]
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Franklin Gothic Medium'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          MaxLength = 50
+          ParentFont = False
+          TabOrder = 2
+          Text = 'Новый опрос датчиков объекта управления'
+        end
+        object Label2: TLabel
+          Left = 8
+          Height = 21
+          Top = 56
+          Width = 235
+          Anchors = [akTop, akLeft, akRight]
+          Caption = 'Комментарий к набору данных'
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Franklin Gothic Medium'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label3: TLabel
+          Left = 8
+          Height = 21
+          Top = 8
+          Width = 96
+          Caption = 'Число кадров'
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Franklin Gothic Medium'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentColor = False
+          ParentFont = False
+        end
+      end
+      object BtnStart: TBitBtn
+        Left = 0
+        Height = 24
+        Top = 128
+        Width = 176
+        Caption = 'Начать регистрацию'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Franklin Gothic Medium'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Glyph.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000064000000640000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000018101E700800040000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000008000FF028302F4008000400000
+          0000000000000000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000008000FF2AB72AFF028402F40080
+          0042000000000000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000008000FF37C837FF2AB72AFF0284
+          02F4008000420000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000008000FF37C837FF37C837FF2AB7
+          2AFF028402F40080004200000000000000000000000000000000000000000000
+          000000000000000000000000000000000000008000FF37C837FF37C837FF37C8
+          37FF2AB72AFF028402F400800042000000000000000000000000000000000000
+          000000000000000000000000000000000000008000FF37C837FF37C837FF37C8
+          37FF37C837FF29B629FF028302F4008200370000000000000000000000000000
+          000000000000000000000000000000000000008000FF37C837FF37C837FF37C8
+          37FF37C837FF29B629FF028302F5008200370000000000000000000000000000
+          000000000000000000000000000000000000008000FF37C837FF37C837FF37C8
+          37FF2AB72AFF028302F500800042000000000000000000000000000000000000
+          000000000000000000000000000000000000008000FF37C837FF37C837FF2AB7
+          2AFF028302F50080004200000000000000000000000000000000000000000000
+          000000000000000000000000000000000000008000FF37C837FF2AB72AFF0283
+          02F5008000420000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000008000FF2AB72AFF028302F50080
+          0042000000000000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000008000FF028302F5008000400000
+          0000000000000000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000018101E700800040000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000
+        }
+        OnClick = BtnStartClick
+        ParentFont = False
+        TabOrder = 2
+      end
+      object BtnSave: TBitBtn
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideRight.Side = asrBottom
+        Left = 712
+        Height = 24
+        Top = 128
+        Width = 177
+        Caption = 'Сохранить данные'
+        Enabled = False
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Franklin Gothic Medium'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Glyph.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000064000000640000000000000000000000A4653455A465
+          34FFA46534FFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BD
+          BAFFA46534FFA46534FFA46534FFA46534FFA46534FF00000000A46534FFA465
+          34FFA46534FFB6BDBAFFA46534FFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BD
+          BAFFA46534FFA46534FFA46534FFA46534FFA46534FF00000000A46534FFA465
+          34FFA46534FFB6BDBAFFA46534FFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BD
+          BAFFA46534FFA46534FFA46534FFA46534FFA46534FF00000000A46534FFA465
+          34FFA46534FFB6BDBAFFA46534FFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BD
+          BAFFA46534FFA46534FFA46534FFA46534FFA46534FF00000000A46534FFA465
+          34FFA46534FFB6BDBAFFA46534FFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BD
+          BAFFA46534FFA46534FFA46534FFA46534FFA46534FF00000000A46534FFA465
+          34FFA46534FFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BD
+          BAFFA46534FFA46534FFA46534FFA46534FFA46534FF00000000A46534FFA465
+          34FFA46534FFA46534FFA46534FFA46534FFA46534FFA46534FFA46534FFA465
+          34FFA46534FFA46534FFA46534FFA46534FFA46534FF00000000A46534FFA465
+          34FFA46534FFA46534FFA46534FFA46534FFA46534FFA46534FFA46534FFA465
+          34FFA46534FFA46534FFA46534FFA46534FFA46534FF00000000A46534FFECEE
+          EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEE
+          EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFA46534FF00000000A46534FFECEE
+          EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEE
+          EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFA46534FF00000000A46534FFECEE
+          EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEE
+          EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFA46534FF00000000A46534FFECEE
+          EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEE
+          EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFA46534FF00000000A46534FFECEE
+          EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEE
+          EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFA46534FF00000000A46534FFECEE
+          EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEE
+          EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFA46534FF00000000A46534FF5959
+          F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959
+          F3FF5959F3FF5959F3FF5959F3FF5959F3FFA46534FF00000000A46534FF5959
+          F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959
+          F3FF5959F3FF5959F3FF5959F3FF5959F3FFA46534FF00000000
+        }
+        OnClick = BtnSaveClick
+        ParentFont = False
+        TabOrder = 3
+      end
+      object BtnStop: TBitBtn
+        AnchorSideLeft.Side = asrBottom
+        Left = 560
+        Height = 24
+        Top = 128
+        Width = 96
+        Caption = 'Прервать'
+        Enabled = False
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Franklin Gothic Medium'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Glyph.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000064000000640000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          00000000AAFF0000AAFF0000AAFF0000AAFF0000AAFF0000AAFF0000AAFF0000
+          AAFF0000AAFF0000AAFF0000AAFF000000000000000000000000000000000000
+          00000000AAFF6B6BFFFF5F5FFFFF5353FFFF4747FFFF3B3BFFFF2F2FFFFF2424
+          FFFF1818FFFF0C0CFFFF0000AAFF000000000000000000000000000000000000
+          00000000AAFF7676FFFF6B6BFFFF5F5FFFFF5353FFFF4747FFFF3B3BFFFF2F2F
+          FFFF2424FFFF1818FFFF0000AAFF000000000000000000000000000000000000
+          00000000AAFF8282FFFF7676FFFF6B6BFFFF5F5FFFFF5353FFFF4747FFFF3B3B
+          FFFF2F2FFFFF2424FFFF0000AAFF000000000000000000000000000000000000
+          00000000AAFF8E8EFFFF8282FFFF7676FFFF6B6BFFFF5F5FFFFF5353FFFF4747
+          FFFF3B3BFFFF2F2FFFFF0000AAFF000000000000000000000000000000000000
+          00000000AAFF9A9AFFFF8E8EFFFF8282FFFF7676FFFF6B6BFFFF5F5FFFFF5353
+          FFFF4747FFFF3B3BFFFF0000AAFF000000000000000000000000000000000000
+          00000000AAFFA6A6FFFF9A9AFFFF8E8EFFFF8282FFFF7676FFFF6B6BFFFF5F5F
+          FFFF5353FFFF4747FFFF0000AAFF000000000000000000000000000000000000
+          00000000AAFFB2B2FFFFA6A6FFFF9A9AFFFF8E8EFFFF8282FFFF7676FFFF6B6B
+          FFFF5F5FFFFF5353FFFF0000AAFF000000000000000000000000000000000000
+          00000000AAFFBDBDFFFFB2B2FFFFA6A6FFFF9A9AFFFF8E8EFFFF8282FFFF7676
+          FFFF6B6BFFFF5F5FFFFF0000AAFF000000000000000000000000000000000000
+          00000000AAFFC9C9FFFFBDBDFFFFB2B2FFFFA6A6FFFF9A9AFFFF8E8EFFFF8282
+          FFFF7676FFFF6B6BFFFF0000AAFF000000000000000000000000000000000000
+          00000000AAFF0000AAFF0000AAFF0000AAFF0000AAFF0000AAFF0000AAFF0000
+          AAFF0000AAFF0000AAFF0000AAFF000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000
+        }
+        OnClick = BtnStopClick
+        ParentFont = False
+        TabOrder = 4
+      end
+      object ProgressBar1: TProgressBar
+        Left = 224
+        Height = 24
+        Top = 128
+        Width = 272
+        Enabled = False
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Franklin Gothic Medium'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+        ParentShowHint = False
+        TabOrder = 5
+      end
+      object SG1: TStringGrid
+        AnchorSideRight.Side = asrBottom
+        Left = 0
+        Height = 404
+        Top = 160
+        Width = 892
+        Anchors = [akTop, akLeft, akRight]
+        AutoEdit = False
+        ColCount = 15
+        Columns = <        
+          item
+            Title.Caption = 'Дата и время'
+            Width = 0
+          end        
+          item
+            Title.Caption = 'Канал 1'
+            Width = 64
+          end        
+          item
+            Title.Caption = 'Канал 2'
+            Width = 64
+          end        
+          item
+            Title.Caption = 'Канал 3'
+            Width = 64
+          end        
+          item
+            Title.Caption = 'Канал 4'
+            Width = 64
+          end        
+          item
+            Title.Caption = 'Среднее 5'
+            Width = 77
+          end        
+          item
+            Title.Caption = 'Дисперсия 5'
+            Width = 97
+          end        
+          item
+            Title.Caption = 'Канал 6'
+            Width = 64
+          end        
+          item
+            Title.Caption = 'Канал 8'
+            Width = 64
+          end        
+          item
+            Title.Caption = 'Канал 18'
+            Width = 70
+          end        
+          item
+            Title.Caption = 'Канал 47'
+            Width = 72
+          end        
+          item
+            Title.Caption = 'Канал 55'
+            Width = 71
+          end        
+          item
+            Title.Caption = 'Функция 55'
+            Width = 93
+          end        
+          item
+            Title.Caption = 'Канал 83'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Нарушения ПО'
+            Width = 116
+          end>
+        FixedCols = 0
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clBlack
+        Font.Height = -15
+        Font.Name = 'Times New Roman'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+        RowCount = 1
+        TabOrder = 6
+        TitleFont.CharSet = RUSSIAN_CHARSET
+        TitleFont.Color = clBlack
+        TitleFont.Height = -15
+        TitleFont.Name = 'Times New Roman'
+        TitleFont.Pitch = fpVariable
+        TitleFont.Quality = fqDraft
+        TitleFont.Style = [fsBold]
+        ColWidths = (
+          0
+          64
+          64
+          64
+          64
+          77
+          97
+          64
+          64
+          70
+          72
+          71
+          93
+          75
+          116
+        )
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Управление данными'
+      ClientHeight = 696
+      ClientWidth = 892
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Franklin Gothic Medium'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      object DBGrid1: TDBGrid
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Side = asrBottom
+        Left = 0
+        Height = 536
+        Top = 0
+        Width = 637
+        Align = alCustom
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        AutoEdit = False
+        Color = clWindow
+        Columns = <        
+          item
+            Title.Caption = 'ФИО оператора'
+            Width = 0
+            Visible = False
+            FieldName = 'NAME'
+          end        
+          item
+            Title.Caption = 'Дата и время'
+            Width = 0
+            Visible = False
+            FieldName = 'DATETIME'
+          end        
+          item
+            MinSize = 1
+            Title.Caption = 'Канал 1'
+            Width = 65
+            FieldName = 'CH1'
+          end        
+          item
+            MinSize = 1
+            Title.Caption = 'Канал 2'
+            Width = 65
+            FieldName = 'CH2'
+          end        
+          item
+            MinSize = 1
+            Title.Caption = 'Канал 3'
+            Width = 65
+            FieldName = 'CH3'
+          end        
+          item
+            MinSize = 1
+            Title.Caption = 'Канал 4'
+            Width = 65
+            FieldName = 'CH4'
+          end        
+          item
+            MinSize = 1
+            Title.Caption = 'Среднее 5'
+            Width = 80
+            FieldName = 'M5'
+          end        
+          item
+            MinSize = 1
+            Title.Caption = 'Дисперсия 5'
+            Width = 95
+            FieldName = 'D5'
+          end        
+          item
+            MinSize = 1
+            Title.Caption = 'Канал 6'
+            Width = 65
+            FieldName = 'CH6'
+          end        
+          item
+            MinSize = 1
+            Title.Caption = 'Канал 8'
+            Width = 65
+            FieldName = 'CH8'
+          end        
+          item
+            MinSize = 1
+            Title.Caption = 'Канал 18'
+            Width = 75
+            FieldName = 'CH18'
+          end        
+          item
+            MinSize = 1
+            Title.Caption = 'Канал 47'
+            Width = 75
+            FieldName = 'CH47'
+          end        
+          item
+            MinSize = 1
+            Title.Caption = 'Канал 55'
+            Width = 75
+            FieldName = 'CH55'
+          end        
+          item
+            MinSize = 1
+            Title.Caption = 'Функция 55'
+            Width = 90
+            FieldName = 'FUN55'
+          end        
+          item
+            MinSize = 1
+            Title.Caption = 'Канал 83'
+            Width = 75
+            FieldName = 'CH83'
+          end        
+          item
+            Title.Caption = 'Нарушения ПО'
+            Width = 120
+            FieldName = 'POL'
+          end        
+          item
+            Title.Caption = 'Комментарий'
+            Width = 0
+            Visible = False
+            FieldName = 'COMMENT'
+          end>
+        DataSource = DataSource1
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clBlack
+        Font.Height = -15
+        Font.Name = 'Times New Roman'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+        ParentFont = False
+        TabOrder = 0
+        TitleFont.CharSet = RUSSIAN_CHARSET
+        TitleFont.Color = clBlack
+        TitleFont.Height = -15
+        TitleFont.Name = 'Times New Roman'
+        TitleFont.Pitch = fpVariable
+        TitleFont.Quality = fqDraft
+        TitleFont.Style = [fsBold]
+        TitleImageList = ImageList1
+        OnTitleClick = DBGrid1TitleClick
+      end
+      object GroupBox2: TGroupBox
+        Left = 641
+        Height = 312
+        Top = 0
+        Width = 247
+        Anchors = [akTop, akRight]
+        Caption = 'Поиск'
+        ClientHeight = 286
+        ClientWidth = 243
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Franklin Gothic Medium'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+        TabOrder = 1
+        object ComboBox1: TComboBox
+          Left = 4
+          Height = 25
+          Top = 32
+          Width = 235
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -15
+          Font.Name = 'Times New Roman'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ItemHeight = 17
+          ItemIndex = 0
+          Items.Strings = (
+            'Канал 1'
+            'Канал 2'
+            'Канал 3'
+            'Канал 4'
+            'Среднее 5'
+            'Дисперсия 5'
+            'Канал 6'
+            'Канал 8'
+            'Канал 18'
+            'Канал 47'
+            'Канал 55'
+            'Функция 55'
+            'Канал 83'
+          )
+          OnChange = ComboBox1Change
+          ParentFont = False
+          ParentShowHint = False
+          Style = csDropDownList
+          TabOrder = 0
+          Text = 'Канал 1'
+        end
+        object Label4: TLabel
+          Left = 4
+          Height = 21
+          Top = 8
+          Width = 238
+          Anchors = [akTop, akLeft, akRight]
+          Caption = 'Столбец поиска'
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Franklin Gothic Medium'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label5: TLabel
+          Left = 152
+          Height = 21
+          Top = 72
+          Width = 72
+          Anchors = [akTop, akLeft, akRight]
+          Caption = 'Макс.'
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Franklin Gothic Medium'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label6: TLabel
+          Left = 5
+          Height = 21
+          Top = 72
+          Width = 72
+          Anchors = [akTop, akLeft, akRight]
+          Caption = 'Мин.'
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Franklin Gothic Medium'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentColor = False
+          ParentFont = False
+        end
+        object Mini1: TFloatSpinEdit
+          Left = 5
+          Height = 29
+          Top = 96
+          Width = 96
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Franklin Gothic Medium'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Increment = 0.45
+          MaxValue = 25
+          MinValue = -20
+          OnChange = Mini1Change
+          ParentFont = False
+          TabOrder = 1
+          Value = -20
+        end
+        object Maxy1: TFloatSpinEdit
+          Left = 152
+          Height = 29
+          Top = 96
+          Width = 90
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Franklin Gothic Medium'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Increment = 0.45
+          MaxValue = 25
+          MinValue = -20
+          OnChange = Maxy1Change
+          ParentFont = False
+          TabOrder = 2
+          Value = 25
+        end
+        object ComboBox2: TComboBox
+          Left = 4
+          Height = 25
+          Top = 162
+          Width = 236
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -15
+          Font.Name = 'Times New Roman'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ItemHeight = 17
+          Items.Strings = (
+            ''
+          )
+          OnChange = ComboBox2Change
+          ParentFont = False
+          ParentShowHint = False
+          Style = csDropDownList
+          TabOrder = 3
+        end
+        object BtnSetFilter: TBitBtn
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideRight.Side = asrBottom
+          Left = 82
+          Height = 24
+          Top = 256
+          Width = 83
+          Caption = 'Найти'
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Franklin Gothic Medium'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          OnClick = BtnSetFilterClick
+          ParentFont = False
+          TabOrder = 4
+        end
+        object BtnSetFilter1: TBitBtn
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideRight.Side = asrBottom
+          Left = 159
+          Height = 24
+          Top = 256
+          Width = 83
+          Caption = 'Сброс'
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Franklin Gothic Medium'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          OnClick = BtnSetFilter1Click
+          ParentFont = False
+          TabOrder = 5
+          Visible = False
+        end
+        object Label10: TLabel
+          Left = 4
+          Height = 21
+          Top = 136
+          Width = 139
+          Anchors = [akTop, akLeft, akRight]
+          Caption = 'ФИО оператора'
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Franklin Gothic Medium'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label11: TLabel
+          Left = 5
+          Height = 21
+          Top = 200
+          Width = 212
+          Anchors = [akTop, akLeft, akRight]
+          Caption = 'Время и дата эксперимента'
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Franklin Gothic Medium'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentColor = False
+          ParentFont = False
+        end
+        object ComboBox4: TComboBox
+          Left = 4
+          Height = 25
+          Top = 224
+          Width = 235
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -15
+          Font.Name = 'Times New Roman'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ItemHeight = 17
+          Items.Strings = (
+            ''
+          )
+          ParentFont = False
+          ParentShowHint = False
+          Style = csDropDownList
+          TabOrder = 6
+        end
+      end
+      object GroupBox3: TGroupBox
+        Left = 641
+        Height = 97
+        Top = 320
+        Width = 248
+        Anchors = [akTop, akRight]
+        Caption = 'Вывод данных'
+        ClientHeight = 71
+        ClientWidth = 244
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Franklin Gothic Medium'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+        TabOrder = 2
+        object BtnExport: TBitBtn
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideRight.Side = asrBottom
+          Left = 8
+          Height = 24
+          Top = 8
+          Width = 232
+          Caption = 'Экспорт данных'
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Franklin Gothic Medium'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            2000000000000004000064000000640000000000000000000000A4653455A465
+            34FFA46534FFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BD
+            BAFFA46534FFA46534FFA46534FFA46534FFA46534FF00000000A46534FFA465
+            34FFA46534FFB6BDBAFFA46534FFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BD
+            BAFFA46534FFA46534FFA46534FFA46534FFA46534FF00000000A46534FFA465
+            34FFA46534FFB6BDBAFFA46534FFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BD
+            BAFFA46534FFA46534FFA46534FFA46534FFA46534FF00000000A46534FFA465
+            34FFA46534FFB6BDBAFFA46534FFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BD
+            BAFFA46534FFA46534FFA46534FFA46534FFA46534FF00000000A46534FFA465
+            34FFA46534FFB6BDBAFFA46534FFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BD
+            BAFFA46534FFA46534FFA46534FFA46534FFA46534FF00000000A46534FFA465
+            34FFA46534FFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BD
+            BAFFA46534FFA46534FFA46534FFA46534FFA46534FF00000000A46534FFA465
+            34FFA46534FFA46534FFA46534FFA46534FFA46534FFA46534FFA46534FFA465
+            34FFA46534FFA46534FFA46534FFA46534FFA46534FF00000000A46534FFA465
+            34FFA46534FFA46534FFA46534FFA46534FFA46534FFA46534FFA46534FFA465
+            34FFA46534FFA46534FFA46534FFA46534FFA46534FF00000000A46534FFECEE
+            EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEE
+            EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFA46534FF00000000A46534FFECEE
+            EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEE
+            EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFA46534FF00000000A46534FFECEE
+            EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEE
+            EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFA46534FF00000000A46534FFECEE
+            EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEE
+            EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFA46534FF00000000A46534FFECEE
+            EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEE
+            EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFA46534FF00000000A46534FFECEE
+            EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEE
+            EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFA46534FF00000000A46534FF5959
+            F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959
+            F3FF5959F3FF5959F3FF5959F3FF5959F3FFA46534FF00000000A46534FF5959
+            F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959
+            F3FF5959F3FF5959F3FF5959F3FF5959F3FFA46534FF00000000
+          }
+          OnClick = BtnExportClick
+          ParentFont = False
+          TabOrder = 0
+        end
+        object BtnProtocol1: TBitBtn
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideRight.Side = asrBottom
+          Left = 8
+          Height = 24
+          Top = 40
+          Width = 232
+          Caption = 'Создать отчёт'
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Franklin Gothic Medium'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            2000000000000004000064000000640000000000000000000000C87137FFC871
+            37FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC871
+            37FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFF1F1
+            F1FFEFEFEFFFEEEEEEFFEDEDEDFFEBEBEBFFEAEAEAFFE9E9E9FFE7E7E7FFE6E6
+            E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFC87137FFC87137FFF3F3
+            F3FFF1F1F1FFF0F0F0FFCD8959FFCD8959FFCD8959FFCD8959FFCD8959FFCD89
+            59FFCD8959FFCD8959FFE6E6E6FFE6E6E6FFE6E6E6FFC87137FFC87137FFF4F4
+            F4FFF3F3F3FFF2F2F2FFCD8959FFFFF6D5FFFFF6D5FFFFF6D5FFFFF6D5FFFFF6
+            D5FFFFF6D5FFCD8959FFE6E6E6FFE6E6E6FFE6E6E6FFC87137FFC87137FFF6F6
+            F6FFF5F5F5FFF3F3F3FFCD8959FFFFF7DBFF918A6FFF918A6FFF918A6FFF918A
+            6FFFFFF6D5FFCD8959FFE7E7E7FFE6E6E6FFE6E6E6FFC87137FFC87137FFF8F8
+            F8FFF6F6F6FFF5F5F5FFCD8959FFFFF9E1FFFFF8DFFFFFF8DEFFFFF8DDFFFFF7
+            DCFFFFF7DBFFCD8959FFE9E9E9FFE8E8E8FFE7E7E7FFC87137FFC87137FFFAFA
+            FAFFF8F8F8FFF7F7F7FFCD8959FFFFFAE6FF918A6FFF918A6FFF918A6FFF918A
+            6FFFFFF8E0FFCD8959FFEBEBEBFFEAEAEAFFE8E8E8FFC87137FFC87137FFFBFB
+            FBFFFAFAFAFFF9F9F9FFCD8959FFFFFBECFFFFFBEBFFFFFAEAFFFFFAE8FFFFFA
+            E7FFFFFAE6FFCD8959FFEDEDEDFFEBEBEBFFEAEAEAFFC87137FFC87137FFFDFD
+            FDFFFCFCFCFFFAFAFAFFCD8959FFFFFCF2FF918A6FFF918A6FFF918A6FFFFFFB
+            EDFFFFFBECFFCD8959FFEEEEEEFFEDEDEDFFECECECFFC87137FFC87137FFFFFF
+            FFFFFDFDFDFFFCFCFCFFCD8959FFFFFDF8FFFFFDF6FFFFFDF5FFFFFDF4FFFFFC
+            F3FFF2DFCBFFCF8E5FFFF0F0F0FFEFEFEFFFEEEEEEFFC87137FFC87137FFFFFF
+            FFFFFFFFFFFFFEFEFEFFCD8959FFFFFFFDFFFFFEFCFFFFFEFBFFFFFEFAFFF3E2
+            D3FFD19266FFE9D7CBFFF2F2F2FFF1F1F1FFEFEFEFFFC87137FFC87137FFFFFF
+            FFFFFFFFFFFFFFFFFFFFCD8959FFCD8959FFCD8959FFCD8959FFCD8959FFCF8E
+            60FFEBDACEFFF5F5F5FFF4F4F4FFF2F2F2FFF1F1F1FFC87137FFC87137FFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDFDFDFFFCFCFCFFFBFBFBFFF9F9
+            F9FFF8F8F8FFF7F7F7FFF5F5F5FFF4F4F4FFF3F3F3FFC87137FFC87137FFC871
+            37FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC871
+            37FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FF0000
+            FFFFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC871
+            37FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC871
+            37FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC871
+            37FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FF
+          }
+          OnClick = BtnProtocol1Click
+          ParentFont = False
+          TabOrder = 1
+        end
+      end
+      object GroupBox4: TGroupBox
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Side = asrBottom
+        Left = 1
+        Height = 115
+        Top = 576
+        Width = 637
+        Anchors = [akLeft, akRight, akBottom]
+        Caption = 'Средние значения по данным'
+        ClientHeight = 89
+        ClientWidth = 633
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Franklin Gothic Medium'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+        TabOrder = 3
+        object SGMeans: TStringGrid
+          AnchorSideRight.Side = asrBottom
+          Left = 6
+          Height = 77
+          Top = 6
+          Width = 627
+          Anchors = [akTop, akLeft, akRight]
+          AutoEdit = False
+          ColCount = 14
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -15
+          Font.Name = 'Times New Roman'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goSmoothScroll]
+          ParentFont = False
+          RowCount = 2
+          ScrollBars = ssHorizontal
+          TabOrder = 0
+          TitleFont.CharSet = RUSSIAN_CHARSET
+          TitleFont.Color = clBlack
+          TitleFont.Height = -15
+          TitleFont.Name = 'Times New Roman'
+          TitleFont.Pitch = fpVariable
+          TitleFont.Quality = fqDraft
+          TitleFont.Style = [fsBold]
+          ColWidths = (
+            10
+            64
+            64
+            64
+            64
+            85
+            98
+            64
+            64
+            77
+            71
+            71
+            93
+            73
+          )
+          RowHeights = (
+            28
+            28
+          )
+          Cells = (
+            13
+            1
+            0
+            'Канал 1'
+            2
+            0
+            'Канал 2'
+            3
+            0
+            'Канал 3'
+            4
+            0
+            'Канал 4'
+            5
+            0
+            'Среднее 5'
+            6
+            0
+            'Дисперсия 5'
+            7
+            0
+            'Канал 6'
+            8
+            0
+            'Канал 8'
+            9
+            0
+            'Канал  18'
+            10
+            0
+            'Канал 47'
+            11
+            0
+            'Канал 55'
+            12
+            0
+            'Функция 55'
+            13
+            0
+            'Канал 83'
+          )
+        end
+      end
+      object Label7: TLabel
+        AnchorSideBottom.Side = asrBottom
+        Left = 12
+        Height = 21
+        Top = 544
+        Width = 103
+        Anchors = [akLeft, akRight, akBottom]
+        Caption = 'Комментарий'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Franklin Gothic Medium'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object ShowComment: TEdit
+        AnchorSideBottom.Side = asrBottom
+        Left = 172
+        Height = 29
+        Top = 544
+        Width = 465
+        Anchors = [akLeft, akRight, akBottom]
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Franklin Gothic Medium'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 50
+        ParentFont = False
+        ReadOnly = True
+        TabOrder = 4
+      end
+      object ShowCount: TEdit
+        AnchorSideBottom.Side = asrBottom
+        Left = 783
+        Height = 29
+        Top = 424
+        Width = 105
+        Anchors = [akTop, akRight]
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Franklin Gothic Medium'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 50
+        ParentFont = False
+        ReadOnly = True
+        TabOrder = 5
+      end
+      object Label8: TLabel
+        AnchorSideBottom.Side = asrBottom
+        Left = 656
+        Height = 21
+        Top = 424
+        Width = 120
+        Anchors = [akTop, akRight]
+        Caption = 'Найдено кадров:'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Franklin Gothic Medium'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Обработка данных'
+      ClientHeight = 696
+      ClientWidth = 892
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Franklin Gothic Medium'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      object GroupBox5: TGroupBox
+        AnchorSideRight.Side = asrBottom
+        Left = 0
+        Height = 360
+        Top = 0
+        Width = 636
+        Anchors = [akTop, akLeft, akRight]
+        Caption = 'Расчеты статистик по данным'
+        ClientHeight = 334
+        ClientWidth = 632
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Franklin Gothic Medium'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+        TabOrder = 0
+        object SGStats: TStringGrid
+          AnchorSideRight.Side = asrBottom
+          Left = 0
+          Height = 240
+          Top = 0
+          Width = 620
+          Anchors = [akTop, akLeft, akRight]
+          AutoEdit = False
+          ColCount = 14
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -15
+          Font.Name = 'Times New Roman'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goSmoothScroll]
+          ParentFont = False
+          RowCount = 9
+          ScrollBars = ssHorizontal
+          TabOrder = 0
+          TitleFont.CharSet = RUSSIAN_CHARSET
+          TitleFont.Color = clBlack
+          TitleFont.Height = -15
+          TitleFont.Name = 'Times New Roman'
+          TitleFont.Pitch = fpVariable
+          TitleFont.Quality = fqDraft
+          TitleFont.Style = [fsBold]
+          ColWidths = (
+            95
+            64
+            64
+            64
+            64
+            85
+            98
+            64
+            64
+            77
+            71
+            71
+            93
+            73
+          )
+          RowHeights = (
+            28
+            28
+            24
+            24
+            24
+            24
+            24
+            24
+            24
+          )
+          Cells = (
+            22
+            0
+            0
+            'Статистика'
+            0
+            1
+            'Среднее'
+            0
+            2
+            'Медиана'
+            0
+            3
+            'Дисперсия'
+            0
+            4
+            'Максимум'
+            0
+            5
+            'Минимум'
+            0
+            6
+            'Размах'
+            0
+            7
+            'Асимметрия'
+            0
+            8
+            'Эксцесс'
+            1
+            0
+            'Канал 1'
+            2
+            0
+            'Канал 2'
+            3
+            0
+            'Канал 3'
+            4
+            0
+            'Канал 4'
+            5
+            0
+            'Среднее 5'
+            6
+            0
+            'Дисперсия 5'
+            7
+            0
+            'Канал 6'
+            8
+            0
+            'Канал 8'
+            9
+            0
+            'Канал  18'
+            10
+            0
+            'Канал 47'
+            11
+            0
+            'Канал 55'
+            12
+            0
+            'Функция 55'
+            13
+            0
+            'Канал 83'
+          )
+        end
+      end
+      object Chart1: TChart
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Side = asrBottom
+        Left = 0
+        Height = 389
+        Top = 272
+        Width = 636
+        AxisList = <        
+          item
+            Marks.LabelBrush.Style = bsClear
+            Minors = <>
+            Title.LabelFont.Orientation = 900
+            Title.LabelBrush.Style = bsClear
+          end        
+          item
+            Alignment = calBottom
+            Marks.LabelBrush.Style = bsClear
+            Minors = <>
+            Title.LabelBrush.Style = bsClear
+          end>
+        Foot.Brush.Color = clBtnFace
+        Foot.Font.Color = clBlue
+        Title.Brush.Color = clBtnFace
+        Title.Font.CharSet = RUSSIAN_CHARSET
+        Title.Font.Color = clBlack
+        Title.Font.Height = -15
+        Title.Font.Name = 'Times New Roman'
+        Title.Font.Pitch = fpVariable
+        Title.Font.Quality = fqDraft
+        Title.Font.Style = [fsBold]
+        Title.Text.Strings = (
+          ''
+        )
+        Title.Visible = True
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        object Chart1BarSeries1: TBarSeries
+          Marks.Distance = 0
+          AxisIndexX = 1
+          AxisIndexY = 0
+          BarBrush.Color = clRed
+          BarWidthPercent = 100
+        end
+      end
+      object GroupBox6: TGroupBox
+        Left = 641
+        Height = 241
+        Top = 0
+        Width = 248
+        Anchors = [akTop, akRight]
+        Caption = 'Опции'
+        ClientHeight = 215
+        ClientWidth = 244
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Franklin Gothic Medium'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+        TabOrder = 2
+        object BtnProtocol2: TBitBtn
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideRight.Side = asrBottom
+          Left = 8
+          Height = 24
+          Top = 176
+          Width = 232
+          Caption = 'Создать отчёт'
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Franklin Gothic Medium'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            2000000000000004000064000000640000000000000000000000C87137FFC871
+            37FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC871
+            37FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFF1F1
+            F1FFEFEFEFFFEEEEEEFFEDEDEDFFEBEBEBFFEAEAEAFFE9E9E9FFE7E7E7FFE6E6
+            E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFC87137FFC87137FFF3F3
+            F3FFF1F1F1FFF0F0F0FFCD8959FFCD8959FFCD8959FFCD8959FFCD8959FFCD89
+            59FFCD8959FFCD8959FFE6E6E6FFE6E6E6FFE6E6E6FFC87137FFC87137FFF4F4
+            F4FFF3F3F3FFF2F2F2FFCD8959FFFFF6D5FFFFF6D5FFFFF6D5FFFFF6D5FFFFF6
+            D5FFFFF6D5FFCD8959FFE6E6E6FFE6E6E6FFE6E6E6FFC87137FFC87137FFF6F6
+            F6FFF5F5F5FFF3F3F3FFCD8959FFFFF7DBFF918A6FFF918A6FFF918A6FFF918A
+            6FFFFFF6D5FFCD8959FFE7E7E7FFE6E6E6FFE6E6E6FFC87137FFC87137FFF8F8
+            F8FFF6F6F6FFF5F5F5FFCD8959FFFFF9E1FFFFF8DFFFFFF8DEFFFFF8DDFFFFF7
+            DCFFFFF7DBFFCD8959FFE9E9E9FFE8E8E8FFE7E7E7FFC87137FFC87137FFFAFA
+            FAFFF8F8F8FFF7F7F7FFCD8959FFFFFAE6FF918A6FFF918A6FFF918A6FFF918A
+            6FFFFFF8E0FFCD8959FFEBEBEBFFEAEAEAFFE8E8E8FFC87137FFC87137FFFBFB
+            FBFFFAFAFAFFF9F9F9FFCD8959FFFFFBECFFFFFBEBFFFFFAEAFFFFFAE8FFFFFA
+            E7FFFFFAE6FFCD8959FFEDEDEDFFEBEBEBFFEAEAEAFFC87137FFC87137FFFDFD
+            FDFFFCFCFCFFFAFAFAFFCD8959FFFFFCF2FF918A6FFF918A6FFF918A6FFFFFFB
+            EDFFFFFBECFFCD8959FFEEEEEEFFEDEDEDFFECECECFFC87137FFC87137FFFFFF
+            FFFFFDFDFDFFFCFCFCFFCD8959FFFFFDF8FFFFFDF6FFFFFDF5FFFFFDF4FFFFFC
+            F3FFF2DFCBFFCF8E5FFFF0F0F0FFEFEFEFFFEEEEEEFFC87137FFC87137FFFFFF
+            FFFFFFFFFFFFFEFEFEFFCD8959FFFFFFFDFFFFFEFCFFFFFEFBFFFFFEFAFFF3E2
+            D3FFD19266FFE9D7CBFFF2F2F2FFF1F1F1FFEFEFEFFFC87137FFC87137FFFFFF
+            FFFFFFFFFFFFFFFFFFFFCD8959FFCD8959FFCD8959FFCD8959FFCD8959FFCF8E
+            60FFEBDACEFFF5F5F5FFF4F4F4FFF2F2F2FFF1F1F1FFC87137FFC87137FFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDFDFDFFFCFCFCFFFBFBFBFFF9F9
+            F9FFF8F8F8FFF7F7F7FFF5F5F5FFF4F4F4FFF3F3F3FFC87137FFC87137FFC871
+            37FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC871
+            37FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FF0000
+            FFFFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC871
+            37FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC871
+            37FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC871
+            37FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FF
+          }
+          OnClick = BtnProtocol2Click
+          ParentFont = False
+          TabOrder = 0
+        end
+        object BtnHisto: TBitBtn
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideRight.Side = asrBottom
+          Left = 8
+          Height = 24
+          Top = 144
+          Width = 232
+          Caption = 'Построить гистограмму'
+          Default = True
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Franklin Gothic Medium'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Glyph.Data = {
+            36090000424D3609000000000000360000002800000018000000180000000100
+            20000000000000090000640000006400000000000000000000003771C8E83771
+            C8D93871C7853366CC0A00000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00000000000000000000000000000000000000000000000000003771C8DA3672
+            C94C3871C78E3771C8CF376DC80E000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00000000000000000000000000000000000000000000000000003771C8873871
+            C7935A72A7FB3771C8FF5F71A0FFC77138FFC87137FFC87137FFC87137FFC871
+            37FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC871
+            37FFC87137FFC87137FFC87137FFC87239F100000000000000002E74D10B3771
+            C8D23771C8FF3771C8FF3771C8FF88A4CFFFDDD8D4FFDCD7D3FFDAD5D1FFD9D4
+            D0FFD8D3CFFFD7D2CEFFD5D0CCFFD4CFCBFFD2CDC9FFD1CCC8FFCFCAC6FFCEC9
+            C5FFCCC7C3FFCBC6C2FFCCC1BAFFC87137FF0000000000000000000000003377
+            CC0F5F71A0FF3771C8FF3771C8FF3972C8FFB1C1DAFFE0E0E0FFDEDEDEFFDDDD
+            DDFFDBDBDBFFDADADAFFD8D8D8FFD7D7D7FFD5D5D5FFD4D4D4FFD2D2D2FFD1D1
+            D1FFCFCFCFFFCDCDCDFFCCC7C4FFC87137FF0000000000000000000000000000
+            0000C77138FF8BA7D2FF3972C8FF3771C8FF4278C9FFA1B7D8FFD5D9DFFFD1D5
+            DCFFAABCD7FF95ADD2FFCED2D9FFD8D8D8FFD7D7D7FFD5D5D5FFD4D4D4FFD2D2
+            D2FFD1D1D1FFCFCFCFFFCEC9C6FFC87137FF0000000000000000000000000000
+            0000C87137FFE6E1DEFFB6C6DFFF4278C9FF3771C8FF3771C8FF3771C8FF3771
+            C8FF3771C8FF3771C8FF97B2DBFFDCDCDCFFD8D8D8FFD7D7D7FFD5D5D5FFD4D4
+            D4FFD2D2D2FFD0D0D0FFCFCAC7FFC87137FF0000000000000000000000000000
+            0000C87137FFE8E3E0FFE8E8E8FFA5BBDBFF3771C8FF3771C8FF3771C8FF3771
+            C8FF3771C8FF8FADDBFFECEDEDFFD3D3D3FFD7D7D7FFD8D8D8FFD7D7D7FFD5D5
+            D5FFD4D4D4FFD2D2D2FFD1CCC9FFC87137FF0000000000000000000000000000
+            0000C87137FFE9E4E1FFEAEAEAFFDCE0E6FF3771C8FF3771C8FF3771C8FF3771
+            C8FF8FAEDCFFEFF0F0FFE6E6E6FFDDDDDDFFD5D5D5FFE0E0E0FFD8D8D8FFD7D7
+            D7FFD5D5D5FFD3D3D3FFD1CCC9FFC87137FF0000000000000000000000000000
+            0000C87137FFEBE6E3FFEBEBEBFFDDE1E8FF3771C8FF3771C8FF3771C8FF90AF
+            DDFFF1F2F2FFE9E9E9FFE7E7E7FFE6E6E6FFE3EDEFFF35CBE2FFAAD5DCFFD8D8
+            D8FFD7D7D7FFD5D5D5FFD3CECBFFC87137FF0000000000000000000000000000
+            0000C87137FFECE7E4FFEDEDEDFFB2C4E0FF3771C8FF3771C8FF90AFDDFFF2F3
+            F3FFECECECFFEAEAEAFFE9E9E9FFECF0F1FFB8DEE8FF58D1E6FF0CC5E2FFAAD5
+            DCFFD8D8D8FFD6D6D6FFD4CFCCFFC87137FF0000000000000000000000000000
+            0000C87137FFEEE9E6FFEEEEEEFF9EB7DDFF3771C8FF91AFDDFFF3F4F5FFEEEE
+            EEFFEDEDEDFFECECECFFECF2F4FFA6DFEEFFA4DDECFFAFDDE9FF58D1E6FF0CC5
+            E2FFB5CDDDFFD8D8D8FFD6D1CEFFC87137FF0000000000000000000000000000
+            0000C87137FFEFEAE7FFF0F0F0FFDFE3EAFF9DB8E0FFF4F5F5FFF1F1F1FFF0F0
+            F0FFEDEDEDFFEBF3F5FF95DFF2FF8DDDF1FF98DDEFFFA4DDECFFAFDDE9FF5BD0
+            E6FFE025F9FFDFB7DFFFD7D2CFFFC87137FF0000000000000000000000000000
+            0000C87137FFF1ECE9FFF1F1F1FFF0F0F0FFF0F0F0FFEAEAEAFFF1F1F1FFF0F0
+            F0FFEAF4F7FF81DFF7FF77DDF7FF82DDF4FF8DDDF1FF98DDEFFFA4DDECFFD193
+            B7FFF44AF4FFDDD0DDFFD9D4D1FFC87137FF0000000000000000000000000000
+            0000C87137FFF2EDEAFFF3F3F3FFF1F1F1FFF0F0F0FFECECECFFEBEBEBFFE6F4
+            F7FF70E0FCFF60DDFCFF6BDDFAFF77DDF7FF82DDF4FF8DDDF1FFBF878BFFFE03
+            03FFEE7375FFDCDCDCFFDAD5D2FFC87137FF0000000000000000000000000000
+            0000C87137FFF3EEEBFFF4F4F4FFF3F3F3FFF1F1F1FFF0F0F0FFF0F1F1FF38CF
+            E6FF2AD0F0FF55DDFFFF60DDFCFF6BDDFAFF7EE1E8FF20F739FF38EE2CFFF11A
+            0EFFFB1E1EFFE4B9B9FFDCD7D4FFC87137FF0000000000000000000000000000
+            0000C87137FFF4EFECFFF6F6F6FFF4F4F4FFF3F3F3FFF1F1F1FFF0F0F0FFB9E5
+            ECFF0DC6E3FF2AD0F0FF53D9FEFF20F4FEFF0EFEFDFF2FFA65FF00FF00FF36EE
+            2AFFDCB1A4FFE0DADAFFDDD8D5FFC87137FF0000000000000000000000000000
+            0000C87137FFF6F1EEFFF7F7F7FFF6F6F6FFF4F4F4FFF3F3F3FFF1F1F1FFF0F0
+            F0FFB9E5ECFF0DC5E3FF0827FCFF3FB6F9FF00FFFFFF0EFEFDFF2CFA62FF00FF
+            00FF41F741FFD7E2D7FFDFDAD7FFC87137FF0000000000000000000000000000
+            0000C87137FFF7F2EFFFF9F9F9FFF7F7F7FFF6F6F6FFF4F4F4FFF3F3F3FFF1F1
+            F1FFF0F0F0FFBAD1EFFF0E0EFEFF2B2BFBFF71ECF5FF18FDFDFF7FF2ECFF3CF8
+            3EFF59F559FFB5E8B5FFE0DBD8FFC87137FF0000000000000000000000000000
+            0000C87137FFF9F4F1FFFAFAFAFFF9F9F9FFF7F7F7FFF6F6F6FFF4F4F4FFF3F3
+            F3FFF1F1F1FFF0F0F0FFBFBFF1FFD8D8EFFFEBEBEBFFBEEEEEFFE0E9E9FFDEE8
+            DEFFCCE9CCFFD9E5D9FFE2DDDAFFC87137FF0000000000000000000000000000
+            0000C87137FFF7ECE5FFF8F3EFFFF6F1EDFFF5F0ECFFF4EFEBFFF3EEEAFFF1EC
+            E8FFF0EBE7FFEEE9E5FFEDE8E4FFEBE6E2FFEAE5E1FFE8E3DFFFE7E2DEFFE6E1
+            DDFFE5E0DCFFE3DEDAFFE1D6CFFFC87137FF0000000000000000000000000000
+            0000C9733AF1C87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC871
+            37FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC87137FFC871
+            37FFC87137FFC87137FFC87137FFC9733AF10000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000
+          }
+          OnClick = BtnHistoClick
+          ParentFont = False
+          TabOrder = 1
+        end
+        object ComboBox3: TComboBox
+          Left = 8
+          Height = 25
+          Top = 64
+          Width = 235
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -15
+          Font.Name = 'Times New Roman'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ItemHeight = 17
+          ItemIndex = 0
+          Items.Strings = (
+            'Канал 1'
+            'Канал 2'
+            'Канал 3'
+            'Канал 4'
+            'Среднее 5'
+            'Дисперсия 5'
+            'Канал 6'
+            'Канал 8'
+            'Канал 18'
+            'Канал 47'
+            'Канал 55'
+            'Функция 55'
+            'Канал 83'
+          )
+          OnChange = ComboBox1Change
+          ParentFont = False
+          ParentShowHint = False
+          Style = csDropDownList
+          TabOrder = 2
+          Text = 'Канал 1'
+        end
+        object Label9: TLabel
+          Left = 8
+          Height = 21
+          Top = 40
+          Width = 250
+          Anchors = [akTop, akLeft, akRight]
+          Caption = 'Выбор столбца'
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Franklin Gothic Medium'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label12: TLabel
+          Left = 8
+          Height = 21
+          Top = 104
+          Width = 144
+          Anchors = [akTop, akLeft, akRight]
+          Caption = 'Число интервалов'
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Franklin Gothic Medium'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentColor = False
+          ParentFont = False
+        end
+        object SpinInt: TSpinEdit
+          Left = 171
+          Height = 29
+          Top = 104
+          Width = 72
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Franklin Gothic Medium'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          MaxValue = 50
+          MinValue = 2
+          ParentFont = False
+          TabOrder = 3
+          Value = 20
+        end
+        object BtnStat: TBitBtn
+          Left = 8
+          Height = 24
+          Top = 8
+          Width = 232
+          Caption = 'Провести расчеты'
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Franklin Gothic Medium'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            2000000000000004000064000000640000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            000000000000000000000000000000000000018101E700800040000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            000000000000000000000000000000000000008000FF028302F4008000400000
+            0000000000000000000000000000000000000000000000000000000000000000
+            000000000000000000000000000000000000008000FF2AB72AFF028402F40080
+            0042000000000000000000000000000000000000000000000000000000000000
+            000000000000000000000000000000000000008000FF37C837FF2AB72AFF0284
+            02F4008000420000000000000000000000000000000000000000000000000000
+            000000000000000000000000000000000000008000FF37C837FF37C837FF2AB7
+            2AFF028402F40080004200000000000000000000000000000000000000000000
+            000000000000000000000000000000000000008000FF37C837FF37C837FF37C8
+            37FF2AB72AFF028402F400800042000000000000000000000000000000000000
+            000000000000000000000000000000000000008000FF37C837FF37C837FF37C8
+            37FF37C837FF29B629FF028302F4008200370000000000000000000000000000
+            000000000000000000000000000000000000008000FF37C837FF37C837FF37C8
+            37FF37C837FF29B629FF028302F5008200370000000000000000000000000000
+            000000000000000000000000000000000000008000FF37C837FF37C837FF37C8
+            37FF2AB72AFF028302F500800042000000000000000000000000000000000000
+            000000000000000000000000000000000000008000FF37C837FF37C837FF2AB7
+            2AFF028302F50080004200000000000000000000000000000000000000000000
+            000000000000000000000000000000000000008000FF37C837FF2AB72AFF0283
+            02F5008000420000000000000000000000000000000000000000000000000000
+            000000000000000000000000000000000000008000FF2AB72AFF028302F50080
+            0042000000000000000000000000000000000000000000000000000000000000
+            000000000000000000000000000000000000008000FF028302F5008000400000
+            0000000000000000000000000000000000000000000000000000000000000000
+            000000000000000000000000000000000000018101E700800040000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000
+          }
+          OnClick = BtnStatClick
+          ParentFont = False
+          TabOrder = 4
+        end
+      end
+    end
+  end
+  object MainMenu1: TMainMenu
+    left = 832
+    top = 696
+    object MenuItem2: TMenuItem
+      Caption = 'Опции'
+      OnClick = MenuItem2Click
+    end
+    object MenuAbout: TMenuItem
+      Caption = 'О программе'
+      OnClick = MenuAboutClick
+    end
+    object MenuExit: TMenuItem
+      Caption = 'Выход'
+      OnClick = MenuExitClick
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = FMData
+    left = 800
+    top = 696
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Params = <>
+    DataSource = DataSource1
+    left = 768
+    top = 696
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    left = 736
+    top = 696
+  end
+  object FMData: TDbf
+    DateTimeHandling = dtDateTime
+    Exclusive = True
+    IndexDefs = <    
+      item
+        IndexFile = 'NAME_A'
+        SortField = 'NAME'
+        Options = []
+      end    
+      item
+        IndexFile = 'DATETIME_A'
+        SortField = 'DATETIME'
+        Options = []
+      end    
+      item
+        IndexFile = 'COMMENT_A'
+        SortField = 'COMMENT'
+        Options = []
+      end    
+      item
+        IndexFile = 'CH1_A'
+        SortField = 'CH1'
+        Options = []
+      end    
+      item
+        IndexFile = 'CH2_A'
+        SortField = 'CH2'
+        Options = []
+      end    
+      item
+        IndexFile = 'CH3_A'
+        SortField = 'CH3'
+        Options = []
+      end    
+      item
+        IndexFile = 'CH4_A'
+        SortField = 'CH4'
+        Options = []
+      end    
+      item
+        IndexFile = 'M5_A'
+        SortField = 'M5'
+        Options = []
+      end    
+      item
+        IndexFile = 'D5_A'
+        SortField = 'D5'
+        Options = []
+      end    
+      item
+        IndexFile = 'CH6_A'
+        SortField = 'CH6'
+        Options = []
+      end    
+      item
+        IndexFile = 'CH8_A'
+        SortField = 'CH8'
+        Options = []
+      end    
+      item
+        IndexFile = 'CH18_A'
+        SortField = 'CH18'
+        Options = []
+      end    
+      item
+        IndexFile = 'CH47_A'
+        SortField = 'CH47'
+        Options = []
+      end    
+      item
+        IndexFile = 'CH55_A'
+        SortField = 'CH55'
+        Options = []
+      end    
+      item
+        IndexFile = 'CH83_A'
+        SortField = 'CH83'
+        Options = []
+      end    
+      item
+        IndexFile = 'POL_A'
+        SortField = 'POL'
+        Options = []
+      end    
+      item
+        IndexFile = 'FUN55_A'
+        SortField = 'FUN55'
+        Options = []
+      end>
+    OpenMode = omAutoCreate
+    StoreDefs = True
+    TableName = 'FMData.dbf'
+    TableLevel = 25
+    OnTranslate = FMDataTranslate
+    FieldDefs = <    
+      item
+        Name = 'NAME'
+        DataType = ftString
+        Size = 30
+      end    
+      item
+        Name = 'DATETIME'
+        DataType = ftString
+        Size = 20
+      end    
+      item
+        Name = 'COMMENT'
+        DataType = ftString
+        Size = 100
+      end    
+      item
+        Name = 'CH1'
+        DataType = ftFloat
+        Precision = 3
+        Size = 8
+      end    
+      item
+        Name = 'CH2'
+        DataType = ftFloat
+        Precision = 3
+        Size = 8
+      end    
+      item
+        Name = 'CH3'
+        DataType = ftFloat
+        Precision = 3
+        Size = 8
+      end    
+      item
+        Name = 'CH4'
+        DataType = ftFloat
+        Precision = 3
+        Size = 8
+      end    
+      item
+        Name = 'M5'
+        DataType = ftFloat
+        Precision = 3
+        Size = 8
+      end    
+      item
+        Name = 'D5'
+        DataType = ftFloat
+        Precision = 3
+        Size = 8
+      end    
+      item
+        Name = 'CH6'
+        DataType = ftFloat
+        Precision = 3
+        Size = 8
+      end    
+      item
+        Name = 'CH8'
+        DataType = ftFloat
+        Precision = 3
+        Size = 8
+      end    
+      item
+        Name = 'CH18'
+        DataType = ftFloat
+        Precision = 3
+        Size = 8
+      end    
+      item
+        Name = 'CH47'
+        DataType = ftFloat
+        Precision = 3
+        Size = 8
+      end    
+      item
+        Name = 'CH55'
+        DataType = ftFloat
+        Precision = 3
+        Size = 8
+      end    
+      item
+        Name = 'FUN55'
+        DataType = ftFloat
+        Precision = 3
+        Size = 8
+      end    
+      item
+        Name = 'CH83'
+        DataType = ftFloat
+        Precision = 3
+        Size = 8
+      end    
+      item
+        Name = 'POL'
+        DataType = ftString
+        Size = 20
+      end>
+    FilterOptions = []
+    OnFilterRecord = FMDataFilterRecord
+    left = 864
+    top = 696
+    object FMDataCH1: TFloatField
+      FieldKind = fkData
+      FieldName = 'CH1'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#0.00'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 8
+    end
+    object FMDataCH2: TFloatField
+      FieldKind = fkData
+      FieldName = 'CH2'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#0.00'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 8
+    end
+    object FMDataCH3: TFloatField
+      FieldKind = fkData
+      FieldName = 'CH3'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#0.00'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 8
+    end
+    object FMDataCH4: TLongintField
+      FieldKind = fkData
+      FieldName = 'CH4'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#0.00'
+    end
+    object FMDataM5: TFloatField
+      FieldKind = fkData
+      FieldName = 'M5'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#0.00'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 8
+    end
+    object FMDataD5: TFloatField
+      FieldKind = fkData
+      FieldName = 'D5'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#0.00'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 8
+    end
+    object FMDataCH6: TLongintField
+      FieldKind = fkData
+      FieldName = 'CH6'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#0.00'
+    end
+    object FMDataCH8: TFloatField
+      FieldKind = fkData
+      FieldName = 'CH8'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#0.00'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 8
+    end
+    object FMDataCH18: TFloatField
+      FieldKind = fkData
+      FieldName = 'CH18'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#0.00'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 8
+    end
+    object FMDataCH47: TFloatField
+      FieldKind = fkData
+      FieldName = 'CH47'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#0.00'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 8
+    end
+    object FMDataCH55: TFloatField
+      FieldKind = fkData
+      FieldName = 'CH55'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#0.00'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 8
+    end
+    object FMDataFUN55: TFloatField
+      FieldKind = fkData
+      FieldName = 'FUN55'
+      Index = 11
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#0.00'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 3
+    end
+    object FMDataCH83: TFloatField
+      FieldKind = fkData
+      FieldName = 'CH83'
+      Index = 12
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#0.00'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 8
+    end
+    object FMDataNAME: TStringField
+      FieldKind = fkData
+      FieldName = 'NAME'
+      Index = 13
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object FMDataDATETIME: TStringField
+      FieldKind = fkData
+      FieldName = 'DATETIME'
+      Index = 14
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object FMDataCOMMENT: TStringField
+      FieldKind = fkData
+      FieldName = 'COMMENT'
+      Index = 15
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object FMDataPOL: TStringField
+      FieldKind = fkData
+      FieldName = 'POL'
+      Index = 16
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object ImageList1: TImageList
+    left = 704
+    top = 696
+    Bitmap = {
+      4C69020000001000000010000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0042924AFF42924AFF42924AFF42924AFFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0042924AFF93E89AFF93E89AFF42924AFFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0042924AFF93E89AFF93E89AFF42924AFFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0042924AFF93E89AFF93E89AFF42924AFFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0042924AFF93E89AFF93E89AFF42924AFFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0042924AFF93E89AFF93E89AFF42924AFFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0042924AFF93E89AFF93E89AFF42924AFFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0042924AFF93E89AFF93E89AFF42924AFFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0042924AFF93E89AFF93E89AFF42924AFFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0042924AFF4292
+      4AFF42924AFF42924AFF93E89AFF93E89AFF42924AFF42924AFF42924AFF4292
+      4AFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF004292
+      4AFF6ABD72FF93E89AFF93E89AFF93E89AFF93E89AFF6ABD72FF42924AFFFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF003C8A
+      430642924AFF6ABD72FF93E89AFF93E89AFF6ABD72FF42924AFF20622306FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0042924AFF6ABD72FF6ABD72FF42924AFFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF0042924AFF42924AFFFFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF0042924AFF42924AFFFFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0042924AFF6ABD72FF6ABD72FF42924AFFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF002062
+      230642924AFF6ABD72FF93E89AFF93E89AFF6ABD72FF42924AFF3C8A4306FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF004292
+      4AFF6ABD72FF93E89AFF93E89AFF93E89AFF93E89AFF6ABD72FF42924AFFFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0042924AFF4292
+      4AFF42924AFF42924AFF93E89AFF93E89AFF42924AFF42924AFF42924AFF4292
+      4AFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0042924AFF93E89AFF93E89AFF42924AFFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0042924AFF93E89AFF93E89AFF42924AFFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0042924AFF93E89AFF93E89AFF42924AFFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0042924AFF93E89AFF93E89AFF42924AFFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0042924AFF93E89AFF93E89AFF42924AFFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0042924AFF93E89AFF93E89AFF42924AFFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0042924AFF93E89AFF93E89AFF42924AFFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0042924AFF93E89AFF93E89AFF42924AFFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0042924AFF42924AFF42924AFF42924AFFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00
+    }
+  end
+  object ExportDialog: TSaveDialog
+    Title = 'Экспорт данных'
+    DefaultExt = '.dbf'
+    FileName = 'FMExport'
+    Filter = 'Data Base File|*.dbf'
+    left = 688
+    top = 640
+  end
+  object ReportDialog: TSaveDialog
+    Title = 'Сохранение отчета'
+    DefaultExt = '.xlsx'
+    FileName = 'Отчет по данным'
+    Filter = 'Рабочая книга Excel|*.xlsx'
+    left = 776
+    top = 616
+  end
+  object NTRDialog: TSaveDialog
+    Title = 'Сохранение результатов НТР'
+    DefaultExt = '.xlsx'
+    FileName = 'Отчет по НТР'
+    Filter = 'Рабочая книга Excel|*.xlsx'
+    left = 640
+    top = 592
+  end
+end
