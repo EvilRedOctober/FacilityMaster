@@ -22,3 +22,13 @@ intrfcD.PAS              # Модуль имитации объекта упра
 test.pas                 # Модуль для измерения скорости выполнения функций
 FacilityMaster.exe       # Скомпилированный файл программы
 ```
+
+##
+
+![Alt-регистрация](screenshot1.png)
+
+
+![Alt-управление](screenshot2.png)
+
+
+![Alt-обработка](screenshot3.png)
